@@ -137,28 +137,19 @@ a:hover {
   overflow: hidden;
 }
 
-.jelly {
-  animation: jelly 0.8s ease;
+.item01 img:hover,
+.item02 img:hover{
+animation:spin .8s linear;
 }
 
-@keyframes jelly {
-  0% {
-    transform: scale(1, 1);
-  }
-  25% {
-    transform: scale(1.15, 0.85);
-  }
-  50% {
-    transform: scale(0.9, 1.1);
-  }
-  75% {
-    transform: scale(1.05, 0.95);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
+@keyframes spin{
+from{
+transform:rotate(0deg);
 }
-
+to{
+transform:rotate(360deg);
+}
+}
 .item01 img,
 .item02 img {
   width: 6em;
