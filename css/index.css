@@ -139,7 +139,8 @@ a:hover {
 
 .item01 img,
 .item02 img{
-animation:spin 8s linear infinite;
+  width:6em;
+animation:spin 1s linear infinite;
 }
 
 @keyframes spin{
