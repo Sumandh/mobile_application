@@ -137,9 +137,9 @@ a:hover {
   overflow: hidden;
 }
 
-.item01 img:hover,
-.item02 img:hover{
-animation:spin .8s linear;
+.item01 img,
+.item02 img{
+animation:spin 8s linear infinite;
 }
 
 @keyframes spin{
