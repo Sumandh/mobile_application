@@ -137,16 +137,26 @@ a:hover {
   overflow: hidden;
 }
 
-.shake {
-  animation: shake 0.6s;
+.jelly {
+  animation: jelly 0.8s ease;
 }
 
-@keyframes shake {
-  0%,100% { transform: translateX(0); }
-  20% { transform: translateX(-8px); }
-  40% { transform: translateX(8px); }
-  60% { transform: translateX(-8px); }
-  80% { transform: translateX(8px); }
+@keyframes jelly {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.15, 0.85);
+  }
+  50% {
+    transform: scale(0.9, 1.1);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 .item01 img,
